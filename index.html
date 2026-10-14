@@ -1,0 +1,651 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pachuau Fabrication | Precision Metal & Steel Works</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        industrial: {
+                            900: '#0f141c',
+                            800: '#171e29',
+                            700: '#222c3c',
+                            600: '#323f55',
+                        },
+                        copper: {
+                            500: '#f97316',
+                            600: '#ea580c',
+                            700: '#c2410c',
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+    <!-- FontAwesome for Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body class="bg-industrial-900 text-gray-100 font-sans antialiased selection:bg-copper-500 selection:text-white">
+
+    <!-- Top Bar / Header -->
+    <header class="fixed top-0 left-0 right-0 z-50 bg-industrial-900/90 backdrop-blur-md border-b border-industrial-700">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-20 flex items-center justify-between">
+            <div class="flex items-center space-x-3">
+                <div class="w-10 h-10 rounded-lg bg-gradient-to-br from-copper-500 to-copper-700 flex items-center justify-center shadow-lg shadow-copper-500/20">
+                    <i class="fa-solid fa-fire text-white text-xl"></i>
+                </div>
+                <div>
+                    <span class="text-xl font-black tracking-wider uppercase bg-gradient-to-r from-white via-gray-200 to-copper-500 bg-clip-text text-transparent">Pachuau</span>
+                    <span class="block text-xs font-bold uppercase tracking-widest text-copper-500">Fabrication</span>
+                </div>
+            </div>
+
+            <!-- Desktop Nav -->
+            <nav class="hidden md:flex items-center space-x-8 text-sm font-semibold tracking-wide">
+                <a href="#services" class="hover:text-copper-500 transition-colors">Services</a>
+                <a href="#estimator" class="hover:text-copper-500 transition-colors">Instant Quote</a>
+                <a href="#portfolio" class="hover:text-copper-500 transition-colors">Project Portfolio</a>
+                <a href="#specs" class="hover:text-copper-500 transition-colors">Materials</a>
+                <a href="#contact" class="hover:text-copper-500 transition-colors">Contact</a>
+            </nav>
+
+            <div class="hidden lg:flex items-center space-x-4">
+                <a href="tel:+918257093796" class="flex items-center space-x-2 bg-industrial-800 border border-industrial-700 px-4 py-2.5 rounded-lg text-sm font-semibold hover:border-copper-500 transition-all">
+                    <i class="fa-solid fa-phone text-copper-500"></i>
+                    <span>+91 82570 93796</span>
+                </a>
+                <a href="#contact" class="bg-copper-600 hover:bg-copper-500 text-white px-5 py-2.5 rounded-lg text-sm font-bold shadow-lg shadow-copper-600/30 transition-all">
+                    Get Started
+                </a>
+            </div>
+
+            <!-- Mobile Menu Toggle -->
+            <button id="menu-btn" class="md:hidden text-gray-300 hover:text-white focus:outline-none">
+                <i class="fa-solid fa-bars text-2xl"></i>
+            </button>
+        </div>
+
+        <!-- Mobile Menu -->
+        <div id="mobile-menu" class="hidden md:hidden bg-industrial-800 border-b border-industrial-700 px-4 pt-2 pb-6 space-y-3">
+            <a href="#services" class="block py-2 text-gray-300 hover:text-copper-500 font-medium">Services</a>
+            <a href="#estimator" class="block py-2 text-gray-300 hover:text-copper-500 font-medium">Instant Quote</a>
+            <a href="#portfolio" class="block py-2 text-gray-300 hover:text-copper-500 font-medium">Project Portfolio</a>
+            <a href="#specs" class="block py-2 text-gray-300 hover:text-copper-500 font-medium">Materials</a>
+            <a href="#contact" class="block py-2 text-gray-300 hover:text-copper-500 font-medium">Contact</a>
+            <div class="pt-4 flex flex-col space-y-3">
+                <a href="tel:+918257093796" class="text-center bg-industrial-700 py-3 rounded-lg font-semibold text-sm">
+                    <i class="fa-solid fa-phone text-copper-500 mr-2"></i> Call Now
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="relative pt-32 pb-20 md:pt-44 md:pb-32 overflow-hidden bg-gradient-to-b from-industrial-900 via-industrial-800 to-industrial-900 border-b border-industrial-700">
+        <div class="absolute inset-0 opacity-10 bg-[radial-gradient(#f97316_1px,transparent_1px)] [background-size:16px_16px]"></div>
+        
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+            <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+                
+                <!-- Hero Text Content -->
+                <div class="lg:col-span-7 space-y-6">
+                    <div class="inline-flex items-center space-x-2 bg-copper-500/10 border border-copper-500/30 px-3.5 py-1.5 rounded-full text-copper-500 text-xs font-bold uppercase tracking-widest">
+                        <i class="fa-solid fa-shield-halved"></i>
+                        <span>Industrial Grade & Structural Precision</span>
+                    </div>
+                    <h1 class="text-4xl sm:text-6xl font-black tracking-tight leading-none uppercase">
+                        Heavy Duty <span class="bg-gradient-to-r from-copper-500 to-amber-500 bg-clip-text text-transparent">Steel & Metal</span> Fabrication
+                    </h1>
+                    <p class="text-gray-400 text-base sm:text-lg max-w-2xl leading-relaxed">
+                        Engineered for ultimate durability. We specialize in robust structural roof frames, custom security gates, architectural grills, industrial staircases, and heavy steel fabrication built to exact architectural specifications.
+                    </p>
+                    <div class="flex flex-wrap gap-4 pt-2">
+                        <a href="#estimator" class="bg-copper-600 hover:bg-copper-500 text-white font-bold px-8 py-4 rounded-xl shadow-xl shadow-copper-600/30 transition-all flex items-center space-x-3">
+                            <span>Calculate Estimate</span>
+                            <i class="fa-solid fa-calculator"></i>
+                        </a>
+                        <a href="#portfolio" class="bg-industrial-700 hover:bg-industrial-600 text-gray-200 font-bold px-8 py-4 rounded-xl border border-industrial-600 transition-all">
+                            View Gallery
+                        </a>
+                    </div>
+
+                    <!-- Trust indicators -->
+                    <div class="grid grid-cols-3 gap-6 pt-8 border-t border-industrial-700/60">
+                        <div>
+                            <span class="block text-2xl sm:text-3xl font-black text-white">100%</span>
+                            <span class="text-xs text-gray-400 uppercase tracking-wider">Weld Integrity</span>
+                        </div>
+                        <div>
+                            <span class="block text-2xl sm:text-3xl font-black text-white">Custom</span>
+                            <span class="text-xs text-gray-400 uppercase tracking-wider">Design & Build</span>
+                        </div>
+                        <div>
+                            <span class="block text-2xl sm:text-3xl font-black text-white">On-Time</span>
+                            <span class="text-xs text-gray-400 uppercase tracking-wider">Project Delivery</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Hero Interactive Quick Estimator Card -->
+                <div class="lg:col-span-5">
+                    <div id="estimator" class="bg-industrial-800 border border-industrial-700 rounded-2xl p-6 sm:p-8 shadow-2xl relative overflow-hidden">
+                        <div class="absolute -right-10 -top-10 w-32 h-32 bg-copper-500/10 rounded-full blur-2xl"></div>
+                        <h3 class="text-xl font-bold uppercase tracking-wide text-white mb-2 flex items-center space-x-2">
+                            <i class="fa-solid fa-bolt text-copper-500"></i>
+                            <span>Instant Project Estimator</span>
+                        </h3>
+                        <p class="text-xs text-gray-400 mb-6">Select your project parameters for an immediate preliminary budget estimation.</p>
+
+                        <div class="space-y-4">
+                            <div>
+                                <label class="block text-xs font-bold uppercase text-gray-300 mb-1">Select Service Type</label>
+                                <select id="service-type" class="w-full bg-industrial-900 border border-industrial-700 rounded-xl px-4 py-3 text-sm text-gray-200 focus:outline-none focus:border-copper-500 transition-all">
+                                    <option value="gate">Custom Gate & Grill (Per Sq.Ft)</option>
+                                    <option value="roof">Structural Roof Frame / Truss</option>
+                                    <option value="stairs">Industrial Staircase / Railings</option>
+                                    <option value="ss">Stainless Steel Works</option>
+                                </select>
+                            </div>
+
+                            <div>
+                                <label class="block text-xs font-bold uppercase text-gray-300 mb-1">Estimated Size (Sq. Ft or Meters)</label>
+                                <input type="number" id="project-size" value="100" min="10" class="w-full bg-industrial-900 border border-industrial-700 rounded-xl px-4 py-3 text-sm text-gray-200 focus:outline-none focus:border-copper-500 transition-all">
+                            </div>
+
+                            <div class="p-4 rounded-xl bg-industrial-900 border border-industrial-700/80 flex items-center justify-between">
+                                <div>
+                                    <span class="text-xs text-gray-400 uppercase block">Estimated Range</span>
+                                    <span id="price-output" class="text-xl font-black text-copper-500">₹25,000 - ₹35,000</span>
+                                </div>
+                                <span class="text-xs text-gray-500 text-right">Includes basic priming & materials</span>
+                            </div>
+
+                            <a href="#contact" class="w-full block text-center bg-copper-600 hover:bg-copper-500 text-white font-bold py-3.5 rounded-xl transition-all shadow-lg shadow-copper-600/20 text-sm">
+                                Request Formal Quote <i class="fa-solid fa-arrow-right ml-2"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="py-24 bg-industrial-900 relative">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center max-w-3xl mx-auto mb-16 space-y-4">
+                <span class="text-xs font-bold text-copper-500 uppercase tracking-widest bg-copper-500/10 px-3 py-1 rounded-full border border-copper-500/20">Core Capabilities</span>
+                <h2 class="text-3xl sm:text-4xl font-black uppercase tracking-tight">Precision Metal Solutions</h2>
+                <p class="text-gray-400 text-sm sm:text-base">Built with high-grade structural steel, precision arc/MIG welding, and industrial anti-corrosion finishes.</p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                
+                <!-- Service 1 -->
+                <div class="bg-industrial-800 border border-industrial-700/80 rounded-2xl p-8 hover:border-copper-500/50 transition-all group">
+                    <div class="w-14 h-14 rounded-xl bg-industrial-900 border border-industrial-700 flex items-center justify-center text-copper-500 text-2xl mb-6 group-hover:bg-copper-600 group-hover:text-white transition-all shadow-md">
+                        <i class="fa-solid fa-door-closed"></i>
+                    </div>
+                    <h3 class="text-xl font-bold uppercase mb-3 text-white">Custom Gates & Grills</h3>
+                    <p class="text-gray-400 text-sm leading-relaxed mb-6">Heavy-duty sliding gates, automated driveway entry systems, security window grills, and decorative perimeter fencing.</p>
+                    <ul class="space-y-2 text-xs text-gray-300">
+                        <li class="flex items-center"><i class="fa-solid fa-check text-copper-500 mr-2"></i> Reinforced MS Hollow Sections</li>
+                        <li class="flex items-center"><i class="fa-solid fa-check text-copper-500 mr-2"></i> Anti-Rust Primer & Paint Coating</li>
+                        <li class="flex items-center"><i class="fa-solid fa-check text-copper-500 mr-2"></i> Custom Laser-Cut or Wrought Iron Designs</li>
+                    </ul>
+                </div>
+
+                <!-- Service 2 -->
+                <div class="bg-industrial-800 border border-industrial-700/80 rounded-2xl p-8 hover:border-copper-500/50 transition-all group">
+                    <div class="w-14 h-14 rounded-xl bg-industrial-900 border border-industrial-700 flex items-center justify-center text-copper-500 text-2xl mb-6 group-hover:bg-copper-600 group-hover:text-white transition-all shadow-md">
+                        <i class="fa-solid fa-house-chimney"></i>
+                    </div>
+                    <h3 class="text-xl font-bold uppercase mb-3 text-white">Structural Roof Frames</h3>
+                    <p class="text-gray-400 text-sm leading-relaxed mb-6">Engineered roof trusses, warehouse steel frameworks, mezzanine floor supports, and industrial shade structures.</p>
+                    <ul class="space-y-2 text-xs text-gray-300">
+                        <li class="flex items-center"><i class="fa-solid fa-check text-copper-500 mr-2"></i> Heavy I-Beams & C-Channels</li>
+                        <li class="flex items-center"><i class="fa-solid fa-check text-copper-500 mr-2"></i> High Load-Bearing Calculations</li>
+                        <li class="flex items-center"><i class="fa-solid fa-check text-copper-500 mr-2"></i> Corrugated & Polycarbonate Sheet Fitment</li>
+                    </ul>
+                </div>
+
+                <!-- Service 3 -->
+                <div class="bg-industrial-800 border border-industrial-700/80 rounded-2xl p-8 hover:border-copper-500/50 transition-all group">
+                    <div class="w-14 h-14 rounded-xl bg-industrial-900 border border-industrial-700 flex items-center justify-center text-copper-500 text-2xl mb-6 group-hover:bg-copper-600 group-hover:text-white transition-all shadow-md">
+                        <i class="fa-solid fa-stairs"></i>
+                    </div>
+                    <h3 class="text-xl font-bold uppercase mb-3 text-white">Staircases & Railings</h3>
+                    <p class="text-gray-400 text-sm leading-relaxed mb-6">Internal spiral staircases, industrial fire escapes, balcony safety barriers, and stainless steel stair handrails.</p>
+                    <ul class="space-y-2 text-xs text-gray-300">
+                        <li class="flex items-center"><i class="fa-solid fa-check text-copper-500 mr-2"></i> Anti-Slip Tread Options</li>
+                        <li class="flex items-center"><i class="fa-solid fa-check text-copper-500 mr-2"></i> Grade 304/316 Stainless Steel Available</li>
+                        <li class="flex items-center"><i class="fa-solid fa-check text-copper-500 mr-2"></i> Rigid Floor & Wall Anchoring</li>
+                    </ul>
+                </div>
+
+                <!-- Service 4 -->
+                <div class="bg-industrial-800 border border-industrial-700/80 rounded-2xl p-8 hover:border-copper-500/50 transition-all group">
+                    <div class="w-14 h-14 rounded-xl bg-industrial-900 border border-industrial-700 flex items-center justify-center text-copper-500 text-2xl mb-6 group-hover:bg-copper-600 group-hover:text-white transition-all shadow-md">
+                        <i class="fa-solid fa-fire-flame-curved"></i>
+                    </div>
+                    <h3 class="text-xl font-bold uppercase mb-3 text-white">Industrial Welding & Repair</h3>
+                    <p class="text-gray-400 text-sm leading-relaxed mb-6">Professional MIG, TIG, and Arc welding services for structural modifications, heavy equipment repairs, and reinforcement.</p>
+                    <ul class="space-y-2 text-xs text-gray-300">
+                        <li class="flex items-center"><i class="fa-solid fa-check text-copper-500 mr-2"></i> On-Site Welding & Fabrication</li>
+                        <li class="flex items-center"><i class="fa-solid fa-check text-copper-500 mr-2"></i> Heavy Machinery Structural Fixes</li>
+                        <li class="flex items-center"><i class="fa-solid fa-check text-copper-500 mr-2"></i> Metal Restoration & Reinforcement</li>
+                    </ul>
+                </div>
+
+                <!-- Service 5 -->
+                <div class="bg-industrial-800 border border-industrial-700/80 rounded-2xl p-8 hover:border-copper-500/50 transition-all group">
+                    <div class="w-14 h-14 rounded-xl bg-industrial-900 border border-industrial-700 flex items-center justify-center text-copper-500 text-2xl mb-6 group-hover:bg-copper-600 group-hover:text-white transition-all shadow-md">
+                        <i class="fa-solid fa-shield-cat"></i>
+                    </div>
+                    <h3 class="text-xl font-bold uppercase mb-3 text-white">Stainless Steel Works</h3>
+                    <p class="text-gray-400 text-sm leading-relaxed mb-6">Sleek, corrosion-resistant stainless steel water tanks stands, commercial kitchen counters, racks, and architectural fixtures.</p>
+                    <ul class="space-y-2 text-xs text-gray-300">
+                        <li class="flex items-center"><i class="fa-solid fa-check text-copper-500 mr-2"></i> Mirror & Matte Finish Options</li>
+                        <li class="flex items-center"><i class="fa-solid fa-check text-copper-500 mr-2"></i> 100% Rust-Proof Material</li>
+                        <li class="flex items-center"><i class="fa-solid fa-check text-copper-500 mr-2"></i> Custom Tanks & Stands Built to Order</li>
+                    </ul>
+                </div>
+
+                <!-- Service 6 -->
+                <div class="bg-industrial-800 border border-industrial-700/80 rounded-2xl p-8 hover:border-copper-500/50 transition-all group">
+                    <div class="w-14 h-14 rounded-xl bg-industrial-900 border border-industrial-700 flex items-center justify-center text-copper-500 text-2xl mb-6 group-hover:bg-copper-600 group-hover:text-white transition-all shadow-md">
+                        <i class="fa-solid fa-compass-drafting"></i>
+                    </div>
+                    <h3 class="text-xl font-bold uppercase mb-3 text-white">Custom Architectural Metal</h3>
+                    <p class="text-gray-400 text-sm leading-relaxed mb-6">Bespoke metal partitions, artistic room dividers, canopy frames, and customized architectural elements for modern buildings.</p>
+                    <ul class="space-y-2 text-xs text-gray-300">
+                        <li class="flex items-center"><i class="fa-solid fa-check text-copper-500 mr-2"></i> Exact Blueprint Execution</li>
+                        <li class="flex items-center"><i class="fa-solid fa-check text-copper-500 mr-2"></i> Specialized Framing Solutions</li>
+                        <li class="flex items-center"><i class="fa-solid fa-check text-copper-500 mr-2"></i> Consultations & Site Measurements</li>
+                    </ul>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Project Gallery -->
+    <section id="portfolio" class="py-24 bg-industrial-800/50 border-y border-industrial-700">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex flex-col md:flex-row md:items-end justify-between mb-12">
+                <div class="space-y-2">
+                    <span class="text-xs font-bold text-copper-500 uppercase tracking-widest bg-copper-500/10 px-3 py-1 rounded-full border border-copper-500/20">Work Showcase</span>
+                    <h2 class="text-3xl sm:text-4xl font-black uppercase tracking-tight">Fabrication Portfolio</h2>
+                </div>
+                <!-- Filter Buttons -->
+                <div class="flex flex-wrap gap-2 mt-6 md:mt-0">
+                    <button class="filter-btn active bg-copper-600 text-white px-4 py-2 rounded-xl text-xs font-bold uppercase tracking-wider transition-all" data-filter="all">All Works</button>
+                    <button class="filter-btn bg-industrial-700 text-gray-300 px-4 py-2 rounded-xl text-xs font-bold uppercase tracking-wider hover:bg-industrial-600 transition-all" data-filter="gates">Gates & Grills</button>
+                    <button class="filter-btn bg-industrial-700 text-gray-300 px-4 py-2 rounded-xl text-xs font-bold uppercase tracking-wider hover:bg-industrial-600 transition-all" data-filter="roofs">Structural Roofs</button>
+                    <button class="filter-btn bg-industrial-700 text-gray-300 px-4 py-2 rounded-xl text-xs font-bold uppercase tracking-wider hover:bg-industrial-600 transition-all" data-filter="stairs">Railings & Stairs</button>
+                </div>
+            </div>
+
+            <!-- Gallery Grid -->
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8" id="gallery-grid">
+                
+                <!-- Item 1 -->
+                <div class="gallery-item group relative rounded-2xl overflow-hidden bg-industrial-900 border border-industrial-700" data-category="gates">
+                    <div class="h-64 bg-gradient-to-br from-industrial-700 to-industrial-900 flex items-center justify-center relative overflow-hidden">
+                        <div class="absolute inset-0 bg-[radial-gradient(#323f55_1px,transparent_1px)] [background-size:12px_12px] opacity-40"></div>
+                        <i class="fa-solid fa-warehouse text-6xl text-copper-500/40 group-hover:scale-110 transition-transform duration-500"></i>
+                        <div class="absolute inset-0 bg-gradient-to-t from-industrial-900 via-transparent to-transparent opacity-80"></div>
+                        <span class="absolute top-4 left-4 bg-industrial-900/80 backdrop-blur border border-industrial-700 text-copper-500 text-xs font-bold px-3 py-1 rounded-lg uppercase">Gates & Grills</span>
+                    </div>
+                    <div class="p-6">
+                        <h4 class="text-lg font-bold text-white mb-1 uppercase">Heavy-Duty Sliding Entrance Gate</h4>
+                        <p class="text-xs text-gray-400 mb-4">Industrial grade MS framework with double-coated matte black anti-corrosion finish.</p>
+                        <div class="flex items-center justify-between text-xs text-gray-500 pt-4 border-t border-industrial-700">
+                            <span>Residential Project</span>
+                            <span class="text-copper-500 font-bold uppercase">Completed</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Item 2 -->
+                <div class="gallery-item group relative rounded-2xl overflow-hidden bg-industrial-900 border border-industrial-700" data-category="roofs">
+                    <div class="h-64 bg-gradient-to-br from-industrial-700 to-industrial-900 flex items-center justify-center relative overflow-hidden">
+                        <div class="absolute inset-0 bg-[radial-gradient(#323f55_1px,transparent_1px)] [background-size:12px_12px] opacity-40"></div>
+                        <i class="fa-solid fa-industry text-6xl text-copper-500/40 group-hover:scale-110 transition-transform duration-500"></i>
+                        <div class="absolute inset-0 bg-gradient-to-t from-industrial-900 via-transparent to-transparent opacity-80"></div>
+                        <span class="absolute top-4 left-4 bg-industrial-900/80 backdrop-blur border border-industrial-700 text-copper-500 text-xs font-bold px-3 py-1 rounded-lg uppercase">Structural Roofs</span>
+                    </div>
+                    <div class="p-6">
+                        <h4 class="text-lg font-bold text-white mb-1 uppercase">Commercial Truss Roof Frame</h4>
+                        <p class="text-xs text-gray-400 mb-4">Large span structural steel truss assembly with certified high-tensile load strength.</p>
+                        <div class="flex items-center justify-between text-xs text-gray-500 pt-4 border-t border-industrial-700">
+                            <span>Industrial Shed</span>
+                            <span class="text-copper-500 font-bold uppercase">Completed</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Item 3 -->
+                <div class="gallery-item group relative rounded-2xl overflow-hidden bg-industrial-900 border border-industrial-700" data-category="stairs">
+                    <div class="h-64 bg-gradient-to-br from-industrial-700 to-industrial-900 flex items-center justify-center relative overflow-hidden">
+                        <div class="absolute inset-0 bg-[radial-gradient(#323f55_1px,transparent_1px)] [background-size:12px_12px] opacity-40"></div>
+                        <i class="fa-solid fa-stairs text-6xl text-copper-500/40 group-hover:scale-110 transition-transform duration-500"></i>
+                        <div class="absolute inset-0 bg-gradient-to-t from-industrial-900 via-transparent to-transparent opacity-80"></div>
+                        <span class="absolute top-4 left-4 bg-industrial-900/80 backdrop-blur border border-industrial-700 text-copper-500 text-xs font-bold px-3 py-1 rounded-lg uppercase">Railings & Stairs</span>
+                    </div>
+                    <div class="p-6">
+                        <h4 class="text-lg font-bold text-white mb-1 uppercase">Stainless Steel Balcony Railing</h4>
+                        <p class="text-xs text-gray-400 mb-4">Grade 304 mirror polished stainless steel safety rails with secure floor anchors.</p>
+                        <div class="flex items-center justify-between text-xs text-gray-500 pt-4 border-t border-industrial-700">
+                            <span>Multi-Story Building</span>
+                            <span class="text-copper-500 font-bold uppercase">Completed</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Item 4 -->
+                <div class="gallery-item group relative rounded-2xl overflow-hidden bg-industrial-900 border border-industrial-700" data-category="gates">
+                    <div class="h-64 bg-gradient-to-br from-industrial-700 to-industrial-900 flex items-center justify-center relative overflow-hidden">
+                        <div class="absolute inset-0 bg-[radial-gradient(#323f55_1px,transparent_1px)] [background-size:12px_12px] opacity-40"></div>
+                        <i class="fa-solid fa-shield-halved text-6xl text-copper-500/40 group-hover:scale-110 transition-transform duration-500"></i>
+                        <div class="absolute inset-0 bg-gradient-to-t from-industrial-900 via-transparent to-transparent opacity-80"></div>
+                        <span class="absolute top-4 left-4 bg-industrial-900/80 backdrop-blur border border-industrial-700 text-copper-500 text-xs font-bold px-3 py-1 rounded-lg uppercase">Gates & Grills</span>
+                    </div>
+                    <div class="p-6">
+                        <h4 class="text-lg font-bold text-white mb-1 uppercase">Modern Security Window Grills</h4>
+                        <p class="text-xs text-gray-400 mb-4">Custom geometric steel bar pattern combining elegant aesthetics with maximum security.</p>
+                        <div class="flex items-center justify-between text-xs text-gray-500 pt-4 border-t border-industrial-700">
+                            <span>Residential Villa</span>
+                            <span class="text-copper-500 font-bold uppercase">Completed</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Item 5 -->
+                <div class="gallery-item group relative rounded-2xl overflow-hidden bg-industrial-900 border border-industrial-700" data-category="roofs">
+                    <div class="h-64 bg-gradient-to-br from-industrial-700 to-industrial-900 flex items-center justify-center relative overflow-hidden">
+                        <div class="absolute inset-0 bg-[radial-gradient(#323f55_1px,transparent_1px)] [background-size:12px_12px] opacity-40"></div>
+                        <i class="fa-solid fa-hammer text-6xl text-copper-500/40 group-hover:scale-110 transition-transform duration-500"></i>
+                        <div class="absolute inset-0 bg-gradient-to-t from-industrial-900 via-transparent to-transparent opacity-80"></div>
+                        <span class="absolute top-4 left-4 bg-industrial-900/80 backdrop-blur border border-industrial-700 text-copper-500 text-xs font-bold px-3 py-1 rounded-lg uppercase">Structural Roofs</span>
+                    </div>
+                    <div class="p-6">
+                        <h4 class="text-lg font-bold text-white mb-1 uppercase">Mezzanine Floor Steel Framing</h4>
+                        <p class="text-xs text-gray-400 mb-4">Heavy structural steel floor joists and columns built for industrial storage expansion.</p>
+                        <div class="flex items-center justify-between text-xs text-gray-500 pt-4 border-t border-industrial-700">
+                            <span>Warehouse Setup</span>
+                            <span class="text-copper-500 font-bold uppercase">Completed</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Item 6 -->
+                <div class="gallery-item group relative rounded-2xl overflow-hidden bg-industrial-900 border border-industrial-700" data-category="stairs">
+                    <div class="h-64 bg-gradient-to-br from-industrial-700 to-industrial-900 flex items-center justify-center relative overflow-hidden">
+                        <div class="absolute inset-0 bg-[radial-gradient(#323f55_1px,transparent_1px)] [background-size:12px_12px] opacity-40"></div>
+                        <i class="fa-solid fa-circle-nodes text-6xl text-copper-500/40 group-hover:scale-110 transition-transform duration-500"></i>
+                        <div class="absolute inset-0 bg-gradient-to-t from-industrial-900 via-transparent to-transparent opacity-80"></div>
+                        <span class="absolute top-4 left-4 bg-industrial-900/80 backdrop-blur border border-industrial-700 text-copper-500 text-xs font-bold px-3 py-1 rounded-lg uppercase">Railings & Stairs</span>
+                    </div>
+                    <div class="p-6">
+                        <h4 class="text-lg font-bold text-white mb-1 uppercase">Spiral Industrial Staircase</h4>
+                        <p class="text-xs text-gray-400 mb-4">Space-saving circular steel staircase with chequered plate treads and sturdy handrail.</p>
+                        <div class="flex items-center justify-between text-xs text-gray-500 pt-4 border-t border-industrial-700">
+                            <span>Commercial Office</span>
+                            <span class="text-copper-500 font-bold uppercase">Completed</span>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Material Specifications -->
+    <section id="specs" class="py-24 bg-industrial-900">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+                <div class="space-y-6">
+                    <span class="text-xs font-bold text-copper-500 uppercase tracking-widest bg-copper-500/10 px-3 py-1 rounded-full border border-copper-500/20">Quality Standard</span>
+                    <h2 class="text-3xl sm:text-4xl font-black uppercase tracking-tight">Certified Materials & Heavy-Duty Standards</h2>
+                    <p class="text-gray-400 text-sm sm:text-base leading-relaxed">
+                        We don't compromise on gauge thickness or weld penetration. Every structure leaving our workshop is built using verified raw materials designed to withstand harsh weather conditions and heavy mechanical stress for decades.
+                    </p>
+                    <div class="grid grid-cols-2 gap-4 pt-4">
+                        <div class="bg-industrial-800 border border-industrial-700 p-4 rounded-xl">
+                            <i class="fa-solid fa-layer-group text-copper-500 text-xl mb-2"></i>
+                            <h4 class="font-bold uppercase text-sm mb-1 text-white">Certified Steel Gauges</h4>
+                            <p class="text-xs text-gray-400">High tensile hollow sections, ISMB beams, and structural channels.</p>
+                        </div>
+                        <div class="bg-industrial-800 border border-industrial-700 p-4 rounded-xl">
+                            <i class="fa-solid fa-wand-magic-sparkles text-copper-500 text-xl mb-2"></i>
+                            <h4 class="font-bold uppercase text-sm mb-1 text-white">Anti-Rust Treatment</h4>
+                            <p class="text-xs text-gray-400">Dual red-oxide priming followed by industrial enamel finish coats.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="bg-industrial-800 border border-industrial-700 rounded-2xl p-8 space-y-6">
+                    <h3 class="text-xl font-bold uppercase tracking-wide text-white border-b border-industrial-700 pb-4">Our Fabrication Process</h3>
+                    <div class="space-y-6">
+                        <div class="flex items-start space-x-4">
+                            <div class="w-8 h-8 rounded-lg bg-copper-600 text-white font-black flex items-center justify-center shrink-0">1</div>
+                            <div>
+                                <h4 class="font-bold text-white text-sm uppercase">Site Measurement & Blueprint</h4>
+                                <p class="text-xs text-gray-400">Precise dimension checks and CAD blueprint drafting for exact structural fit.</p>
+                            </div>
+                        </div>
+                        <div class="flex items-start space-x-4">
+                            <div class="w-8 h-8 rounded-lg bg-copper-600 text-white font-black flex items-center justify-center shrink-0">2</div>
+                            <div>
+                                <h4 class="font-bold text-white text-sm uppercase">Precision Cutting & Jig Assembly</h4>
+                                <p class="text-xs text-gray-400">Accurate metal cutting, shaping, and jig clamping to maintain square alignment.</p>
+                            </div>
+                        </div>
+                        <div class="flex items-start space-x-4">
+                            <div class="w-8 h-8 rounded-lg bg-copper-600 text-white font-black flex items-center justify-center shrink-0">3</div>
+                            <div>
+                                <h4 class="font-bold text-white text-sm uppercase">Full Penetration Welding</h4>
+                                <p class="text-xs text-gray-400">Robust MIG and arc welding executed by certified master welders.</p>
+                            </div>
+                        </div>
+                        <div class="flex items-start space-x-4">
+                            <div class="w-8 h-8 rounded-lg bg-copper-600 text-white font-black flex items-center justify-center shrink-0">4</div>
+                            <div>
+                                <h4 class="font-bold text-white text-sm uppercase">Finishing & Final Installation</h4>
+                                <p class="text-xs text-gray-400">Surface grinding, protective priming, paint coating, and secure on-site installation.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-24 bg-industrial-800/50 border-t border-industrial-700">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-12">
+                
+                <div class="space-y-6">
+                    <span class="text-xs font-bold text-copper-500 uppercase tracking-widest bg-copper-500/10 px-3 py-1 rounded-full border border-copper-500/20">Get In Touch</span>
+                    <h2 class="text-3xl sm:text-4xl font-black uppercase tracking-tight">Let's Discuss Your Project</h2>
+                    <p class="text-gray-400 text-sm sm:text-base leading-relaxed">
+                        Ready to start your steel fabrication project? Contact our workshop directly or drop us a message below for quick consultations and site visits.
+                    </p>
+
+                    <div class="space-y-4 pt-4">
+                        <div class="flex items-center space-x-4 bg-industrial-900 border border-industrial-700 p-4 rounded-xl">
+                            <div class="w-12 h-12 rounded-lg bg-industrial-800 border border-industrial-700 flex items-center justify-center text-copper-500 text-xl">
+                                <i class="fa-solid fa-phone"></i>
+                            </div>
+                            <div>
+                                <span class="text-xs text-gray-400 uppercase block">Direct Line</span>
+                                <a href="tel:+918257093796" class="text-white font-bold text-lg hover:text-copper-500 transition-colors">+91 82570 93796</a>
+                            </div>
+                        </div>
+
+                        <div class="flex items-center space-x-4 bg-industrial-900 border border-industrial-700 p-4 rounded-xl">
+                            <div class="w-12 h-12 rounded-lg bg-industrial-800 border border-industrial-700 flex items-center justify-center text-copper-500 text-xl">
+                                <i class="fa-solid fa-location-dot"></i>
+                            </div>
+                            <div>
+                                <span class="text-xs text-gray-400 uppercase block">Workshop Location</span>
+                                <span class="text-white font-bold text-sm">Bethlehem Vengthlang, Aizawl, Mizoram</span>
+                            </div>
+                        </div>
+
+                        <div class="flex items-center space-x-4 bg-industrial-900 border border-industrial-700 p-4 rounded-xl">
+                            <div class="w-12 h-12 rounded-lg bg-industrial-800 border border-industrial-700 flex items-center justify-center text-copper-500 text-xl">
+                                <i class="fa-solid fa-clock"></i>
+                            </div>
+                            <div>
+                                <span class="text-xs text-gray-400 uppercase block">Working Hours</span>
+                                <span class="text-white font-bold text-sm">Monday – Saturday: 8:00 AM – 5:00 PM</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Contact Form -->
+                <div class="bg-industrial-900 border border-industrial-700 rounded-2xl p-8 shadow-2xl">
+                    <h3 class="text-xl font-bold uppercase tracking-wide text-white mb-6">Send Inquiry Message</h3>
+                    <form id="inquiry-form" class="space-y-4">
+                        <div>
+                            <label class="block text-xs font-bold uppercase text-gray-300 mb-1">Your Name</label>
+                            <input type="text" required class="w-full bg-industrial-800 border border-industrial-700 rounded-xl px-4 py-3 text-sm text-gray-200 focus:outline-none focus:border-copper-500 transition-all" placeholder="Enter your full name">
+                        </div>
+                        <div>
+                            <label class="block text-xs font-bold uppercase text-gray-300 mb-1">Phone Number</label>
+                            <input type="tel" required class="w-full bg-industrial-800 border border-industrial-700 rounded-xl px-4 py-3 text-sm text-gray-200 focus:outline-none focus:border-copper-500 transition-all" placeholder="Enter phone number">
+                        </div>
+                        <div>
+                            <label class="block text-xs font-bold uppercase text-gray-300 mb-1">Service Needed</label>
+                            <select class="w-full bg-industrial-800 border border-industrial-700 rounded-xl px-4 py-3 text-sm text-gray-200 focus:outline-none focus:border-copper-500 transition-all">
+                                <option>Custom Gates & Grills</option>
+                                <option>Structural Roof Frame</option>
+                                <option>Staircases & Railings</option>
+                                <option>Industrial Welding & Repair</option>
+                                <option>Stainless Steel Works</option>
+                                <option>Other Metal Fabrication</option>
+                            </select>
+                        </div>
+                        <div>
+                            <label class="block text-xs font-bold uppercase text-gray-300 mb-1">Project Details / Dimensions</label>
+                            <textarea rows="4" required class="w-full bg-industrial-800 border border-industrial-700 rounded-xl px-4 py-3 text-sm text-gray-200 focus:outline-none focus:border-copper-500 transition-all" placeholder="Describe your requirement, approximate size, or site location..."></textarea>
+                        </div>
+                        <button type="submit" class="w-full bg-copper-600 hover:bg-copper-500 text-white font-bold py-4 rounded-xl transition-all shadow-lg shadow-copper-600/30 uppercase text-sm tracking-wider">
+                            Submit Inquiry <i class="fa-solid fa-paper-plane ml-2"></i>
+                        </button>
+                    </form>
+                    <div id="form-success" class="hidden mt-4 p-4 bg-emerald-500/10 border border-emerald-500/30 rounded-xl text-emerald-400 text-xs text-center font-bold">
+                        Thank you! Your inquiry has been received. We will get back to you shortly.
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-industrial-900 border-t border-industrial-700 py-12">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col md:flex-row items-center justify-between gap-6">
+            <div class="flex items-center space-x-3">
+                <div class="w-8 h-8 rounded-lg bg-copper-600 flex items-center justify-center text-white font-bold">
+                    <i class="fa-solid fa-fire"></i>
+                </div>
+                <span class="text-lg font-black tracking-wider uppercase text-white">Pachuau Fabrication</span>
+            </div>
+            <p class="text-xs text-gray-500 text-center md:text-left">
+                &copy; 2026 Pachuau Fabrication. All rights reserved. Precision Steel & Metal Works.
+            </p>
+            <div class="flex space-x-4 text-gray-400">
+                <a href="tel:+918257093796" class="w-10 h-10 rounded-xl bg-industrial-800 border border-industrial-700 flex items-center justify-center hover:text-copper-500 transition-colors"><i class="fa-solid fa-phone"></i></a>
+                <a href="#contact" class="w-10 h-10 rounded-xl bg-industrial-800 border border-industrial-700 flex items-center justify-center hover:text-copper-500 transition-colors"><i class="fa-solid fa-envelope"></i></a>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Interactive Scripts -->
+    <script>
+        // Mobile Menu Toggle
+        const menuBtn = document.getElementById('menu-btn');
+        const mobileMenu = document.getElementById('mobile-menu');
+        menuBtn.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+        });
+
+        // Instant Cost Estimator Logic
+        const serviceType = document.getElementById('service-type');
+        const projectSize = document.getElementById('project-size');
+        const priceOutput = document.getElementById('price-output');
+
+        function updateEstimate() {
+            const type = serviceType.value;
+            const size = parseFloat(projectSize.value) || 0;
+            let rateLow = 250;
+            let rateHigh = 350;
+
+            if (type === 'roof') {
+                rateLow = 300;
+                rateHigh = 450;
+            } else if (type === 'stairs') {
+                rateLow = 400;
+                rateHigh = 600;
+            } else if (type === 'ss') {
+                rateLow = 450;
+                rateHigh = 700;
+            }
+
+            const lowTotal = Math.round(size * rateLow);
+            const highTotal = Math.round(size * rateHigh);
+            priceOutput.textContent = `₹${lowTotal.toLocaleString()} - ₹${highTotal.toLocaleString()}`;
+        }
+
+        serviceType.addEventListener('change', updateEstimate);
+        projectSize.addEventListener('input', updateEstimate);
+
+        // Portfolio Filter Logic
+        const filterBtns = document.querySelectorAll('.filter-btn');
+        const galleryItems = document.querySelectorAll('.gallery-item');
+
+        filterBtns.forEach(btn => {
+            btn.addEventListener('click', () => {
+                filterBtns.forEach(b => {
+                    b.classList.remove('active', 'bg-copper-600', 'text-white');
+                    b.classList.add('bg-industrial-700', 'text-gray-300');
+                });
+                btn.classList.add('active', 'bg-copper-600', 'text-white');
+                btn.classList.remove('bg-industrial-700', 'text-gray-300');
+
+                const filter = btn.getAttribute('data-filter');
+                galleryItems.forEach(item => {
+                    if (filter === 'all' || item.getAttribute('data-category') === filter) {
+                        item.style.display = 'block';
+                    } else {
+                        item.style.display = 'none';
+                    }
+                });
+            });
+        });
+
+        // Form Submission Simulation
+        const inquiryForm = document.getElementById('inquiry-form');
+        const formSuccess = document.getElementById('form-success');
+        inquiryForm.addEventListener('submit', (e) => {
+            e.preventDefault();
+            inquiryForm.reset();
+            formSuccess.classList.remove('hidden');
+            setTimeout(() => {
+                formSuccess.classList.add('hidden');
+            }, 5000);
+        });
+    </script>
+</body>
+</html>
